@@ -5,7 +5,7 @@
   --clr-light-gray: #d1d3d8;
   --clr-medium-gray: #a1a6b3;
   --clr-dark-gray: #4c4e53;
-  --clr-swap: #e74c3c;
+  --clr-active: #e74c3c;
   --clr-sorted: #2ecc71;
 }
 
@@ -70,4 +70,12 @@ body {
   transition: all ease-in-out 0.3s;
   width: 5px;
   background-color: var(--clr-light-gray);
+}
+
+.active {
+  background-color: var(--clr-active);
+}
+
+.sorted {
+  background-color: var(--clr-sorted);
 }

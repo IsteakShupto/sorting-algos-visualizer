@@ -1,4 +1,4 @@
-### A React + Typescript web application to visualize below sorting algorithms
+## A React + Typescript web application to visualize below sorting algorithms
 
 - Insertion sort
 - Selection sort

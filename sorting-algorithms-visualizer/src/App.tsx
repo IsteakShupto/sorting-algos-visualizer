@@ -4,12 +4,131 @@ import "./App.css";
 
 function App() {
   const [arr, setArr] = useState([
-    8, 7, 20, 2, 3, 8, 12, 21, 32, 3, 8, 9, 5, 47, 21, 56, 6, 12, 3, 8, 9, 5, 8,
-    7, 20, 2, 3, 23, 1, 3, 4, 20, 3, 21, 9, 22, 4, 6, 3, 9, 5, 8, 7, 20, 2, 3,
-    23, 1, 3, 4, 20, 3, 21, 9, 1, 2, 3, 6, 3, 3, 24, 1, 20, 31, 22, 4, 6, 3, 3,
-    21, 9, 1, 2, 3, 6, 3, 3, 4, 1, 20, 31, 22, 4, 6, 3, 1, 3, 4, 20, 3, 21, 9,
-    6, 3, 3, 4, 1, 20, 31, 22, 4, 32, 44, 6, 3, 29, 3, 23, 1, 3, 4, 20, 3, 21,
-    9, 22, 9, 1, 42, 3, 6, 9, 51, 2, 3,
+    { value: 8, state: "" },
+    { value: 7, state: "" },
+    { value: 20, state: "" },
+    { value: 2, state: "" },
+    { value: 3, state: "" },
+    { value: 8, state: "" },
+    { value: 12, state: "" },
+    { value: 21, state: "" },
+    { value: 32, state: "" },
+    { value: 3, state: "" },
+    { value: 8, state: "" },
+    { value: 9, state: "" },
+    { value: 5, state: "" },
+    { value: 47, state: "" },
+    { value: 21, state: "" },
+    { value: 56, state: "" },
+    { value: 6, state: "" },
+    { value: 12, state: "" },
+    { value: 3, state: "" },
+    { value: 8, state: "" },
+    { value: 9, state: "" },
+    { value: 5, state: "" },
+    { value: 8, state: "" },
+    { value: 7, state: "" },
+    { value: 20, state: "" },
+    { value: 2, state: "" },
+    { value: 3, state: "" },
+    { value: 23, state: "" },
+    { value: 1, state: "" },
+    { value: 3, state: "" },
+    { value: 4, state: "" },
+    { value: 20, state: "" },
+    { value: 3, state: "" },
+    { value: 21, state: "" },
+    { value: 9, state: "" },
+    { value: 22, state: "" },
+    { value: 4, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 9, state: "" },
+    { value: 5, state: "" },
+    { value: 8, state: "" },
+    { value: 7, state: "" },
+    { value: 20, state: "" },
+    { value: 2, state: "" },
+    { value: 3, state: "" },
+    { value: 23, state: "" },
+    { value: 1, state: "" },
+    { value: 3, state: "" },
+    { value: 4, state: "" },
+    { value: 20, state: "" },
+    { value: 3, state: "" },
+    { value: 21, state: "" },
+    { value: 9, state: "" },
+    { value: 1, state: "" },
+    { value: 2, state: "" },
+    { value: 3, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 3, state: "" },
+    { value: 24, state: "" },
+    { value: 1, state: "" },
+    { value: 20, state: "" },
+    { value: 31, state: "" },
+    { value: 22, state: "" },
+    { value: 4, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 3, state: "" },
+    { value: 21, state: "" },
+    { value: 9, state: "" },
+    { value: 1, state: "" },
+    { value: 2, state: "" },
+    { value: 3, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 3, state: "" },
+    { value: 4, state: "" },
+    { value: 1, state: "" },
+    { value: 20, state: "" },
+    { value: 31, state: "" },
+    { value: 22, state: "" },
+    { value: 4, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 1, state: "" },
+    { value: 3, state: "" },
+    { value: 4, state: "" },
+    { value: 20, state: "" },
+    { value: 3, state: "" },
+    { value: 21, state: "" },
+    { value: 9, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 3, state: "" },
+    { value: 4, state: "" },
+    { value: 1, state: "" },
+    { value: 20, state: "" },
+    { value: 31, state: "" },
+    { value: 22, state: "" },
+    { value: 4, state: "" },
+    { value: 32, state: "" },
+    { value: 44, state: "" },
+    { value: 6, state: "" },
+    { value: 3, state: "" },
+    { value: 29, state: "" },
+    { value: 3, state: "" },
+    { value: 23, state: "" },
+    { value: 1, state: "" },
+    { value: 3, state: "" },
+    { value: 4, state: "" },
+    { value: 20, state: "" },
+    { value: 3, state: "" },
+    { value: 21, state: "" },
+    { value: 9, state: "" },
+    { value: 22, state: "" },
+    { value: 9, state: "" },
+    { value: 1, state: "" },
+    { value: 42, state: "" },
+    { value: 3, state: "" },
+    { value: 6, state: "" },
+    { value: 9, state: "" },
+    { value: 51, state: "" },
+    { value: 2, state: "" },
+    { value: 3, state: "" },
   ]);
 
   const [isSorting, setIsSorting] = useState(false);
@@ -17,33 +136,47 @@ function App() {
 
   async function insertionSort(): Promise<void> {
     setIsSorting(true);
-    const newArr: number[] = [...arr];
+    const newArr: { value: number; state: string }[] = [...arr];
     for (let i = 1; i < newArr.length; i++) {
-      const curr = newArr[i];
+      const curr = newArr[i].value;
       let j = i - 1;
-      while (j >= 0 && newArr[j] > curr) {
-        newArr[j + 1] = newArr[j];
+      while (j >= 0 && newArr[j].value > curr) {
+        newArr[j + 1].state = "active";
+        newArr[j].state = "active";
+        newArr[j + 1].value = newArr[j].value;
         await slowDownSorting(rangeValue);
         setArr([...newArr]);
         j--;
       }
-      newArr[j + 1] = curr;
+      newArr[j + 1].value = curr;
+      newArr[j + 1].state = "active";
+
       await slowDownSorting(rangeValue);
+      for (let i = 0; i < newArr.length; i++) {
+        newArr[i].state = "";
+      }
       setArr([...newArr]);
     }
+
+    for (let i = 0; i < newArr.length; i++) {
+      newArr[i].state = "sorted";
+    }
+    setArr([...newArr]);
     setIsSorting(false);
   }
 
   async function bubbleSort(): Promise<void> {
     setIsSorting(true);
-    const newArr: number[] = [...arr];
+    const newArr: { value: number; state: string }[] = [...arr];
     for (let i = 0; i < newArr.length; i++) {
       let isSwapped: boolean = false;
       for (let j = 0; j < newArr.length - 1; j++) {
-        if (newArr[j] > newArr[j + 1]) {
-          const temp: number = newArr[j];
-          newArr[j] = newArr[j + 1];
-          newArr[j + 1] = temp;
+        if (newArr[j].value > newArr[j + 1].value) {
+          newArr[j + 1].state = "active";
+          newArr[j].state = "active";
+          const temp: number = newArr[j].value;
+          newArr[j].value = newArr[j + 1].value;
+          newArr[j + 1].value = temp;
           await slowDownSorting(rangeValue);
           setArr([...newArr]);
           isSwapped = true;
@@ -53,43 +186,62 @@ function App() {
         break;
       } else {
         await slowDownSorting(rangeValue);
+        for (let i = 0; i < newArr.length; i++) {
+          newArr[i].state = "";
+        }
         setArr([...newArr]);
       }
     }
+
+    for (let i = 0; i < newArr.length; i++) {
+      newArr[i].state = "sorted";
+    }
+    setArr([...newArr]);
     setIsSorting(false);
   }
 
   async function selectionSort(): Promise<void> {
     setIsSorting(true);
-    const newArr: number[] = [...arr];
+    const newArr: { value: number; state: string }[] = [...arr];
     for (let i = 0; i < newArr.length - 1; i++) {
       let min_elem_idx: number = i;
       for (let j = i + 1; j < newArr.length; j++) {
-        if (newArr[j] < newArr[min_elem_idx]) {
+        if (newArr[j].value < newArr[min_elem_idx].value) {
+          newArr[j].state = "active";
+          newArr[min_elem_idx].state = "active";
           min_elem_idx = j;
         }
       }
-      const temp: number = newArr[min_elem_idx];
-      newArr[min_elem_idx] = newArr[i];
-      newArr[i] = temp;
+      const temp: number = newArr[min_elem_idx].value;
+      newArr[min_elem_idx].value = newArr[i].value;
+      newArr[i].value = temp;
+
       await slowDownSorting(rangeValue);
       setArr([...newArr]);
     }
+
+    for (let i = 0; i < newArr.length; i++) {
+      newArr[i].state = "sorted";
+    }
+    setArr([...newArr]);
     setIsSorting(false);
   }
 
   async function mergeArrays(
-    arrCopy: number[],
+    arrCopy: { value: number; state: string }[],
     left: number,
     mid: number,
     right: number
   ): Promise<void> {
-    const newArr: number[] = [...arrCopy];
-    const merged: number[] = [];
+    for (let i = 0; i < arrCopy.length; i++) {
+      arrCopy[i].state = "";
+    }
+    const newArr: { value: number; state: string }[] = [...arrCopy];
+    const merged: { value: number; state: string }[] = [];
     let i: number = left;
     let j: number = mid + 1;
     while (i <= mid && j <= right) {
-      if (newArr[i] < newArr[j]) {
+      if (newArr[i].value < newArr[j].value) {
         merged.push(newArr[i]);
         i++;
       } else {
@@ -108,6 +260,7 @@ function App() {
     i = 0;
     for (let l = left; l <= right; l++) {
       arrCopy[l] = merged[i];
+      arrCopy[l].state = "active";
       i++;
     }
 
@@ -116,7 +269,7 @@ function App() {
   }
 
   async function mergeSort(
-    arrCopy: number[],
+    arrCopy: { value: number; state: string }[],
     left: number,
     right: number
   ): Promise<void> {
@@ -128,16 +281,19 @@ function App() {
   }
 
   async function partition(
-    arrCopy: number[],
+    arrCopy: { value: number; state: string }[],
     left: number,
     right: number
   ): Promise<number> {
-    const pivot: number = arrCopy[right];
-    const arrLeft: number[] = [];
-    const arrRight: number[] = [];
+    for (let i = 0; i < arrCopy.length; i++) {
+      arrCopy[i].state = "";
+    }
+    const pivot: { value: number; state: string } = arrCopy[right];
+    const arrLeft: { value: number; state: string }[] = [];
+    const arrRight: { value: number; state: string }[] = [];
     let count: number = 0;
     for (let i = left; i <= right - 1; i++) {
-      if (arrCopy[i] < pivot) {
+      if (arrCopy[i].value < pivot.value) {
         arrLeft.push(arrCopy[i]);
         count++;
       } else {
@@ -153,6 +309,7 @@ function App() {
     j = 0;
     for (let i = left + count + 1; i <= right; i++) {
       arrCopy[i] = arrRight[j];
+      arrCopy[i].state = "active";
       j++;
     }
 
@@ -162,7 +319,7 @@ function App() {
   }
 
   async function quirkSort(
-    arrCopy: number[],
+    arrCopy: { value: number; state: string }[],
     left: number,
     right: number
   ): Promise<void> {
@@ -176,12 +333,131 @@ function App() {
   function handleReset() {
     setIsSorting(false);
     setArr([
-      8, 7, 20, 2, 3, 8, 12, 21, 32, 3, 8, 9, 5, 47, 21, 56, 6, 12, 3, 8, 9, 5,
-      8, 7, 20, 2, 3, 23, 1, 3, 4, 20, 3, 21, 9, 22, 4, 6, 3, 9, 5, 8, 7, 20, 2,
-      3, 23, 1, 3, 4, 20, 3, 21, 9, 1, 2, 3, 6, 3, 3, 24, 1, 20, 31, 22, 4, 6,
-      3, 3, 21, 9, 1, 2, 3, 6, 3, 3, 4, 1, 20, 31, 22, 4, 6, 3, 1, 3, 4, 20, 3,
-      21, 9, 6, 3, 3, 4, 1, 20, 31, 22, 4, 32, 44, 6, 3, 29, 3, 23, 1, 3, 4, 20,
-      3, 21, 9, 22, 9, 1, 42, 3, 6, 9, 51, 2, 3,
+      { value: 8, state: "" },
+      { value: 7, state: "" },
+      { value: 20, state: "" },
+      { value: 2, state: "" },
+      { value: 3, state: "" },
+      { value: 8, state: "" },
+      { value: 12, state: "" },
+      { value: 21, state: "" },
+      { value: 32, state: "" },
+      { value: 3, state: "" },
+      { value: 8, state: "" },
+      { value: 9, state: "" },
+      { value: 5, state: "" },
+      { value: 47, state: "" },
+      { value: 21, state: "" },
+      { value: 56, state: "" },
+      { value: 6, state: "" },
+      { value: 12, state: "" },
+      { value: 3, state: "" },
+      { value: 8, state: "" },
+      { value: 9, state: "" },
+      { value: 5, state: "" },
+      { value: 8, state: "" },
+      { value: 7, state: "" },
+      { value: 20, state: "" },
+      { value: 2, state: "" },
+      { value: 3, state: "" },
+      { value: 23, state: "" },
+      { value: 1, state: "" },
+      { value: 3, state: "" },
+      { value: 4, state: "" },
+      { value: 20, state: "" },
+      { value: 3, state: "" },
+      { value: 21, state: "" },
+      { value: 9, state: "" },
+      { value: 22, state: "" },
+      { value: 4, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 9, state: "" },
+      { value: 5, state: "" },
+      { value: 8, state: "" },
+      { value: 7, state: "" },
+      { value: 20, state: "" },
+      { value: 2, state: "" },
+      { value: 3, state: "" },
+      { value: 23, state: "" },
+      { value: 1, state: "" },
+      { value: 3, state: "" },
+      { value: 4, state: "" },
+      { value: 20, state: "" },
+      { value: 3, state: "" },
+      { value: 21, state: "" },
+      { value: 9, state: "" },
+      { value: 1, state: "" },
+      { value: 2, state: "" },
+      { value: 3, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 3, state: "" },
+      { value: 24, state: "" },
+      { value: 1, state: "" },
+      { value: 20, state: "" },
+      { value: 31, state: "" },
+      { value: 22, state: "" },
+      { value: 4, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 3, state: "" },
+      { value: 21, state: "" },
+      { value: 9, state: "" },
+      { value: 1, state: "" },
+      { value: 2, state: "" },
+      { value: 3, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 3, state: "" },
+      { value: 4, state: "" },
+      { value: 1, state: "" },
+      { value: 20, state: "" },
+      { value: 31, state: "" },
+      { value: 22, state: "" },
+      { value: 4, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 1, state: "" },
+      { value: 3, state: "" },
+      { value: 4, state: "" },
+      { value: 20, state: "" },
+      { value: 3, state: "" },
+      { value: 21, state: "" },
+      { value: 9, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 3, state: "" },
+      { value: 4, state: "" },
+      { value: 1, state: "" },
+      { value: 20, state: "" },
+      { value: 31, state: "" },
+      { value: 22, state: "" },
+      { value: 4, state: "" },
+      { value: 32, state: "" },
+      { value: 44, state: "" },
+      { value: 6, state: "" },
+      { value: 3, state: "" },
+      { value: 29, state: "" },
+      { value: 3, state: "" },
+      { value: 23, state: "" },
+      { value: 1, state: "" },
+      { value: 3, state: "" },
+      { value: 4, state: "" },
+      { value: 20, state: "" },
+      { value: 3, state: "" },
+      { value: 21, state: "" },
+      { value: 9, state: "" },
+      { value: 22, state: "" },
+      { value: 9, state: "" },
+      { value: 1, state: "" },
+      { value: 42, state: "" },
+      { value: 3, state: "" },
+      { value: 6, state: "" },
+      { value: 9, state: "" },
+      { value: 51, state: "" },
+      { value: 2, state: "" },
+      { value: 3, state: "" },
     ]);
   }
 
@@ -215,6 +491,11 @@ function App() {
             onClick={async () => {
               setIsSorting(true);
               await mergeSort(arr, 0, arr.length - 1);
+              const newArr: { value: number; state: string }[] = [...arr];
+              for (let i = 0; i < newArr.length; i++) {
+                newArr[i].state = "sorted";
+              }
+              setArr([...newArr]);
               setIsSorting(false);
             }}
             disabled={isSorting}
@@ -226,6 +507,11 @@ function App() {
             onClick={async () => {
               setIsSorting(true);
               await quirkSort(arr, 0, arr.length - 1);
+              const newArr: { value: number; state: string }[] = [...arr];
+              for (let i = 0; i < newArr.length; i++) {
+                newArr[i].state = "sorted";
+              }
+              setArr([...newArr]);
               setIsSorting(false);
             }}
             disabled={isSorting}
@@ -245,8 +531,8 @@ function App() {
               disabled={isSorting}
               defaultValue={rangeValue}
               onChange={(e) => setRangeValue(Number(e.target.value))}
-              min={"50"}
-              max={"200"}
+              min={"1"}
+              max={"1000"}
             />
           </div>
         </div>
@@ -255,8 +541,8 @@ function App() {
             {arr.map((val, valIndex) => (
               <div key={valIndex}>
                 <div
-                  className="arr-bar"
-                  style={{ height: `${val * 10}px` }}
+                  className={`arr-bar ${val.state}`}
+                  style={{ height: `${val.value * 10}px` }}
                 ></div>
               </div>
             ))}
