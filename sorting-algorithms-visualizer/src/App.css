@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --clr-white: #f8f8f8;
+  --clr-light-gray: #d1d3d8;
+  --clr-medium-gray: #a1a6b3;
+  --clr-dark-gray: #4c4e53;
+  --clr-swap: #e74c3c;
+  --clr-sorted: #2ecc71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background-color: var(--clr-dark-gray);
+}
+
+.app-container {
+  display: flex;
+  gap: 20px;
+}
+
+.app-left {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--clr-light-gray);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--clr-medium-gray);
+  color: var(--clr-dark-gray);
+  font-size: 1.25rem;
+  padding: 10px 62.5px;
+}
+
+.btn:not(:last-child) {
+  border-bottom: 1px solid var(--clr-light-gray);
+}
+
+.btn:hover {
+  background-color: var(--clr-white);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+.arr-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 5px;
+  height: 98.75vh;
+}
+.arr-bar-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arr-bar {
+  transition: all ease-in-out 0.3s;
+  width: 5px;
+  background-color: var(--clr-light-gray);
+}
