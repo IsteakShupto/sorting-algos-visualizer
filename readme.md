@@ -12,9 +12,7 @@
 
 ## Screenshots
 
-![Alt text](./screenshots/sorting-visualizer-1.png)
 
-![Alt text](./screenshots/sorting-visualizer-3.png)
 
 ![Alt text](./screenshots/sorting-visualizer-2.png)
 
