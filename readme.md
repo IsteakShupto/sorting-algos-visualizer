@@ -14,8 +14,6 @@
 
 ![Alt text](./screenshots/sorting-visualizer-1.png)
 
-![Alt text](./screenshots/sorting-visualizer-2.png)
-
 ![Alt text](./screenshots/sorting-visualizer-3.png)
 
 ## Details about the sorting algorithms
