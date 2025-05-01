@@ -1,6 +1,26 @@
-## A React + Typescript web application to visualize below sorting algorithms
+## A web application to visualize below sorting algorithms
 
-## Insertion sort
+- A sorting algorithm visualizer web application demonstrating insertion sort, bubble sort, selection sort, quick sort, and merge sort.
+
+## Tech stack
+
+- React JS, Typescript.
+
+## A brief detail about the project
+
+- [Click here](https://www.linkedin.com/feed/update/urn:li:activity:7323577662751309824/)
+
+## Screenshots
+
+![Alt text](/screenshots/sorting-visualizer-1.png)
+
+![Alt text](/screenshots/sorting-visualizer-2.png)
+
+![Alt text](/screenshots/sorting-visualizer-3.png)
+
+## Details about the sorting algorithms
+
+### Insertion sort
 
 - In insertion sort, we basically iterate from second element of the array, treating left part as sorted. For every element, we shift all greater elements in the sorted part one position to the right and insert the current element at its correct position.
 
@@ -19,7 +39,7 @@ function insertionSort(): void {
 }
 ```
 
-## Selection sort
+### Selection sort
 
 - In selection sort, for each position in the array, we find the minimum element in the unsorted portion and swap it with the current position. This ensures that with each pass, the smallest remaining element is placed in its correct position.
 
@@ -40,7 +60,7 @@ function selectionSort(): void {
 }
 ```
 
-## Bubble sort
+### Bubble sort
 
 - In bubble sort, we continuously compare adjacent elements and swap them if they are in the wrong order. In worst possible case, we may need to do this n times for an array of length n to sort the array completely.
 
@@ -62,7 +82,7 @@ function bubbleSort(): void {
 }
 ```
 
-## Merge sort
+### Merge sort
 
 - In merge sort, it is divide-and-conquer algorithm that recursively splits the array into halves, sorts them, and merges them back in sorted order. The merging step compares elements from sorted halves and combines them into a single sorted array until the array is completely sorted.
 
@@ -110,7 +130,7 @@ function mergeSort(arrCopy: number[], left: number, right: number): void {
 }
 ```
 
-## Quick sort
+### Quick sort
 
 - Quick sort is another divide-and-conquer algorithm, where recursively each time we choose a pivot, put all the elements less than it on left of it and put all the largest or equal of it on it's right and put the pivot in it's correct position. The process is recursively applied to the subarrays on either side of the pivot, and we continue it until the array is fully sorted.
 
