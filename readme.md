@@ -16,6 +16,8 @@
 
 ![Alt text](./screenshots/sorting-visualizer-3.png)
 
+![Alt text](./screenshots/sorting-visualizer-2.png)
+
 ## Details about the sorting algorithms
 
 ### Insertion sort
