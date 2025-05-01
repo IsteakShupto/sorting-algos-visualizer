@@ -32,7 +32,7 @@ npm install
 - Speed control of animation
 - Clean UI design
 
-## A visual and interactive web application that demonstrates how sorting algorithms work—built using React. Watch algorithms like Bubble Sort, Merge Sort, and Quick Sort come to life through animated bars.
+## Screenshots
 
 ![Alt text](./screenshots/sorting-visualizer-1.png)
 
