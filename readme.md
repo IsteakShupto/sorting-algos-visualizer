@@ -1,4 +1,4 @@
-## A web application to visualize below sorting algorithms
+## Sorting Visualizer
 
 - A sorting algorithm visualizer web application demonstrating insertion sort, bubble sort, selection sort, quick sort, and merge sort.
 
@@ -6,11 +6,33 @@
 
 - React JS, Typescript.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/IsteakShupto/sorting-algos-visualizer/
+cd sorting-algos-visualizer
+npm install
+```
+
 ## A brief detail about the project
 
 - [Click here](https://www.linkedin.com/feed/update/urn:li:activity:7323577662751309824/)
 
-## Screenshots
+## Features
+
+- Smooth visual animations of sorting steps
+- Supports multiple algorithms (Bubble, Merge, Quick, Insertion, Selection.)
+- Speed control of animation
+- Clean UI design
+
+## A visual and interactive web application that demonstrates how sorting algorithms work—built using React. Watch algorithms like Bubble Sort, Merge Sort, and Quick Sort come to life through animated bars.
 
 ![Alt text](./screenshots/sorting-visualizer-1.png)
 
